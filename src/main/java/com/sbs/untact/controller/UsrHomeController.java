@@ -11,6 +11,6 @@ public class UsrHomeController {
 	@RequestMapping("/usr/home/main")
 	@ResponseBody
 	public String showMain() {
-		return "안녕zzz";
+		return "안녕";
 	}
 }
