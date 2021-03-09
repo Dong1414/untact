@@ -17,5 +17,5 @@ public interface  MemberDao {
 	
 	 void modifyMember(Map<String, Object> param);
 	
-	
+	 Member getMemberByAuthKey(@Param("authKey") String authKey);
 }

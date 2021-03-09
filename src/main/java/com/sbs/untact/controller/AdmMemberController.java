@@ -17,9 +17,15 @@ import com.sbs.untact.service.MemberService;
 
 @Controller
 public class AdmMemberController {
-	@Autowired
+//	@Autowired
 	private MemberService memberService;
 
+	
+	@RequestMapping("/adm/member/login")
+	public String login() {
+		return "adm/member/login";
+	}
+	
 	@RequestMapping("/adm/member/doLogin")
 	@ResponseBody
 	public ResultData doLogin(String loginId, String loginPw, HttpSession session) {
